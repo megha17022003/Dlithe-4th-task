@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced News Application</title>
+    <link rel="stylesheet" href="news.css">
+    <script defer src="news.js"></script>
+</head>
+<body>
+    <header>
+        <h1>News Application</h1>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <input type="text" id="search" placeholder="Search news...">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Sports">Sports</option>
+            <option value="Finance">Finance</option>
+            <option value="Health">Health</option>
+            <option value="Entertainment">Entertainment</option>
+        </select>
+        <select id="sortFilter">
+            <option value="latest">Latest</option>
+            <option value="popular">Popular</option>
+            <option value="relevant">Most Relevant</option>
+        </select>        
+    </header>
+    <marquee id="breakingNews">Breaking News: Stay updated with the latest news!</marquee>
+    <div class="view-toggle">
+        <button onclick="toggleView('grid')">Grid View</button>
+        <button onclick="toggleView('list')">List View</button>
+    </div>
+    <div class="news-container" id="newsList"></div>
+    <button id="loadMore">Load More</button>
+<button id="loadLess" style="display: none;">Load Less</button>
+
+    
+
+
+    <div id="commentsSection">
+        <h2>User Comments</h2>
+        <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+        <button id="postComment">Post Comment</button>
+        <div id="commentsList"></div>
+    </div>

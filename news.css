@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.news-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* List View */
+.list-view {
+    display: block;
+}
+
+.news-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .news-item {
+    background-color: #333;
+    color: white;
+}
+
+#bookmarkSection {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+.bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.remove-bookmark {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
